@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("pull"){
             steps{
-                echo("pull successfull")
+              git branch: 'main', url: 'https://github.com/adityajadhav-dev/jenkins-pipeline.git'
             }
         }
         stage("build"){
